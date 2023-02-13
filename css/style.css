@@ -1,0 +1,174 @@
+:root{
+   --jumbo-bg: #B4D0E7;
+   --btn-blue-color:#0061FF;
+   --white-color: #FFFFFF;
+   --footer-color:#000000;
+   --black-color:#000000;
+   --green-color:#A2D39B;
+   --light-green-color:#D1E9CD;
+   --purple-color:#61082B;
+   --red-color:#FF1C1C;
+   --ski-color:#0093CE;
+   --red-strong-color:#D5001F;
+   --dark-blue:#0D2481;
+   --yellow-color:#FFD830;
+   --light-gray-color:#5d5d5d;
+
+
+   --fs-h1:5em;
+   --fs-h2:3em;
+   --fs-h3:2em;
+   --fs-h4:1.8em;
+   --fs-p:1.2em;
+   --fs-a:1.2em;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.debug{
+    border: solid 1px red;
+}
+
+
+/* container settings (width bigger / lower) */
+.container-90{
+    width: 1400px;
+    margin: 0 auto;
+}
+.container-80{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+
+
+/* display flex settings */
+.d-flex{
+    display: flex;
+}
+.sp-between{
+    justify-content: space-between;
+}
+.items-center{
+    align-items: center;
+}
+
+
+
+
+
+
+/* display inline block */
+.inline{
+    display: inline-block;
+}
+.block{
+    display: block;
+}
+
+
+
+
+/* Images size */
+.img-logo{
+    width: 90px;
+}
+.img-jumbo{
+    width: 1000px;
+}
+
+
+/* header nav height */
+.height-nav{
+    height: 70px;
+}
+
+
+
+/* width row dimension */
+.left{
+    width: 30%;
+}
+.right{
+    width: 70%;
+}
+
+
+
+/* font size document */
+.fs-h1{
+    font-size: var(--fs-h1);
+}
+.fs-h2{
+    font-size: var(--fs-h2);
+}
+.fs-h3{
+    font-size: var(--fs-h3);
+}
+.fs-h4{
+    font-size: var(--fs-h4);
+}
+.fs-p{
+    font-size: var(--fs-p);
+}
+.fs-a{
+    font-size: var(--fs-a);
+}
+
+
+/* background-color - color font*/
+.bg-sky-blue-color{
+    background-color: var(--jumbo-bg);
+}
+.bg-green-color{
+    background-color: var(--green-color);
+}
+.bg-light-green-color{
+    background-color: var(--light-green-color);
+}
+.bg-purple-color{
+    background-color: var(--purple-color);
+}
+.bg-red-color{
+    background-color: var(--red-color);
+}
+.bg-ski-color{
+    background-color: var(--ski-color);
+}
+.bg-red-strong-color{
+    background-color: var(--red-strong-color);
+}
+.bg-dark-blue{
+    background-color: var(--dark-blue);
+}
+.bg-yellow-color{
+    background-color: var(--yellow-color);
+}
+
+
+.purple-color{
+    color: var(--purple-color);
+}
+.light-gray-color{
+    color: var(--light-gray-color);
+}
+
+
+
+
+/* position relative  */
+
+.relative{
+    position: relative;
+    bottom: -70px;
+}
