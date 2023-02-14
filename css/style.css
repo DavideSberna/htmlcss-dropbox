@@ -17,8 +17,8 @@
 
 
    --fs-h1:5.3em;
-   --fs-h2:3em;
-   --fs-h3:2em;
+   --fs-h2:3.2em;
+   --fs-h3:2.5em;
    --fs-h4:1.8em;
    --fs-p:1.2em;
    --fs-a:1.2em;
@@ -103,6 +103,9 @@ nav a:hover:after{
 .items-center{
     align-items: center;
 }
+.items-start{
+    align-items:flex-start
+}
 .stretch{
     display: flex;
     flex-flow: row nowrap;
@@ -111,6 +114,7 @@ nav a:hover:after{
 .gap{
     gap: 45px;
 }
+
 
 
 
@@ -172,6 +176,10 @@ nav a:hover:after{
 .three-row{
     width: calc(100% / 3);
 }
+.three-row-benefit{
+    width: calc((100% / 3) - 30px);
+}
+
 
 
 
@@ -321,6 +329,9 @@ nav a:hover:after{
 }
 .margin-top-bot-50{
     margin: 50px 0;
+}
+.margin-bot-100{
+    margin-bottom: 100px;
 }
 .margin-top100{
     margin-top: 100px;
