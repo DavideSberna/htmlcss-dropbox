@@ -38,9 +38,7 @@ body{
 ul li{
     list-style: none;
 }
-.summary{
-    list-style: none;
-}
+
 .line{
     width: 50px;
     border: solid 1px var(--light-gray-border);
@@ -97,6 +95,7 @@ nav a:hover:after{
 .wrap{
     flex-wrap: wrap;
 }
+
 .direction{
     flex-direction: row;
 }
@@ -336,6 +335,9 @@ nav a:hover:after{
 .margin-top100{
     margin-top: 100px;
 }
+.margin-top10{
+    margin-top: 10px;
+}
 .margin-top130{
     margin-top: 130px;
 }
@@ -371,9 +373,23 @@ nav a:hover:after{
 
 
 
+/* summary settings */
+.summary{
+    list-style: none;
+}
 
+.summary::after{
+    font-family: FontAwesome;
+    content: "\f107";
+    position: relative;
+    left: 45%;
+    
+}
 
-
+.line-long{
+    width: 100%;
+    border: solid 1px var(--light-gray-border);
+}
 
 
 
@@ -388,8 +404,7 @@ nav a:hover:after{
 #singolo-p::before{
     font-family: FontAwesome;
     content: "\f007";
- }
-
+}
 
 
 #singolo-ul li:nth-child(1)::before{
