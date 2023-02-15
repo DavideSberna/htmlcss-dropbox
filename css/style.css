@@ -14,6 +14,7 @@
    --yellow-color:#FFD830;
    --light-gray-color:#5d5d5d;
    --light-gray-border:#d5d5d5;
+   --light-gray-btn:#f0f0f0;
 
 
    --fs-h1:5.3em;
@@ -66,7 +67,6 @@ nav a:after{
 
 }
 nav a:hover:after{
-    
     width: 100%;
     
 }
@@ -329,7 +329,7 @@ nav a:hover:after{
 
 /* button pharams */
 .btn-long{
-    width: 255px;
+    width: 270px;
     height: 50px;
 }
 .btn-short{
@@ -344,6 +344,19 @@ nav a:hover:after{
 }
 .line-height-30{
     line-height: 30px;
+}
+
+.btn-hover{
+    transition: 0.2s;
+}
+.btn-hover:hover{
+    opacity: 0.8;
+}
+.btn-white-hover{
+    transition: 0.2s;
+}
+.btn-white-hover:hover{
+    background-color: var(--light-gray-btn);
 }
 
 
