@@ -15,14 +15,16 @@
    --light-gray-color:#5d5d5d;
    --light-gray-border:#d5d5d5;
    --light-gray-btn:#f0f0f0;
+   --light:op
+
 
 
    --fs-h1:5.3em;
    --fs-h2:3.2em;
    --fs-h3:2.5em;
    --fs-h4:1.6em;
-   --fs-p:1.2em;
-   --fs-a:1.2em;
+   --fs-p:1.1em;
+   --fs-a:1.1em;
    --fs-icon-arrow:4em
 }
 
@@ -54,6 +56,7 @@ ul li{
 }
 nav a{
     position: relative;
+
 }
 nav a:after{
     content: "";
@@ -66,9 +69,11 @@ nav a:after{
     background-color: var(--btn-blue-color);
 
 }
-nav a:hover:after{
+#nav-first a:hover:after{
     width: 100%;
-    
+}
+#nav-second a:hover:not(:last-child):after{
+    width: 100%;
 }
 
 
@@ -359,7 +364,19 @@ nav a:hover:after{
     background-color: var(--light-gray-btn);
 }
 
+.square-1-hover{
+    transition: 0.3s;
+}
+.square-all-hover{
+    transition: 0.3s;
+}
 
+.square-1-hover:hover{
+    box-shadow: inset 0 0 0 20px var(--light-green-color);
+}
+.square-all-hover:hover{
+    box-shadow: inset 0 0 0 20px rgba(0, 0, 0, 0.325);
+}
 
 
 /* text align center */
@@ -411,9 +428,7 @@ nav a:hover:after{
 .padd-all-10{
     padding: 10px;
 }
-/* .padd-all-22{
-    padding: 15px;
-} */
+
 .padd-T-B-10{
     padding: 10px 0;
 }
@@ -451,35 +466,36 @@ nav a:hover:after{
 
 /* summary settings */
 
-/* details > summary {
-    list-style-type: '▶️';
-    
-    
+
+details {
+    padding: 40px 0;
 }
+
+details > summary {
+    list-style-type: none;
+    transition: 0.3s;
+}
+
 
 details[open] > summary {
-    list-style-type: '🔽';
-} */
-
-
-
-
-
-.summary{
-    list-style: none;
-    padding: 20px 0;
-}
-.summary + p{
-    padding-bottom: 20px;
+    margin-bottom: 20px;
 }
 
-.summary::after{
+
+details > summary::after {
     font-family: FontAwesome;
-    content: "\f107";
+    content: '\f107';
     position: relative;
     left: 30%;
-    
 }
+
+details[open] > summary::after {
+    font-family: FontAwesome;
+    content: '\f077';
+    position: relative;
+    left: 30%;
+}
+
 
 .line-long{
     width: 100%;
