@@ -54,6 +54,10 @@ ul li{
     width: 100px;
     border: solid 1px var(--light-gray-border);
 }
+
+
+
+/* nav bar setting / hover dropdown */
 nav a{
     position: relative;
 
@@ -69,11 +73,27 @@ nav a:after{
     background-color: var(--btn-blue-color);
 
 }
-#nav-first a:hover:after{
+
+nav a:hover:not(#not-hover):after{
     width: 100%;
 }
-#nav-second a:hover:not(:last-child):after{
-    width: 100%;
+
+
+.drop-menu ul{
+    /* display: none; */
+    visibility: hidden;
+    transition: 0.2s;
+}
+nav ul li:hover .drop-menu ul{
+    /* display: block; */
+    visibility: visible;
+    position: absolute;
+    left: -5px;
+    background-color: var(--white-color);
+    width: 200px;
+}
+.drop-menu ul li{
+    padding-left: 15px;
 }
 
 
@@ -146,9 +166,7 @@ nav a:after{
 
 
 /* Images size */
-.img-logo{
-    width: 100px;
-}
+
 .img-jumbo{
     width: 100%;
 }
@@ -170,7 +188,7 @@ nav a:after{
     height: 50%; 
 }
 .img-logo{
-    width: 22%;   
+    width: 80%;   
 }
 .img-to-white{
     -webkit-filter: invert(100%);
@@ -319,6 +337,9 @@ nav a:after{
 }
 
 /* position relative - fixed  */
+.relative-nav{
+    position: relative;
+}
 .relative{
     position: relative;
     bottom: -70px;
@@ -455,6 +476,9 @@ nav a:after{
 }
 .padd-T-B-45{
     padding: 45px 0;
+}
+.padd-left-10{
+    padding-left: 10px;
 }
 
 

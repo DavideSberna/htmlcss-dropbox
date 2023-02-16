@@ -17,23 +17,39 @@
         <!-- 100% section nav -->
         <section class="">
             <nav class="d-flex sp-between height-nav padd-LR-15 line-height-70 fixed">
-                <div class="height-text" id="nav-first">
-                    <img class="img-logo padd-LR-15" src="./img/logo-small.png" alt="logo">
-                    <a class="a-dc-none light-gray-color padd-LR-15" href="">Perchè Dropbox</a>
-                    <a class="a-dc-none light-gray-color padd-LR-15" href="">Funzioni</a>
-                    <a class="a-dc-none light-gray-color padd-LR-15" href="">Piani e prezzi</a>
+                <div class="height-text">
+                    <ul class="d-flex">
+                        <li><img class="img-logo padd-LR-15" src="./img/logo-small.png" alt="logo"></li>
+                        <li><a class="a-dc-none light-gray-color padd-LR-15" href="">Perchè Dropbox</a></li>
+                        <li><a class="a-dc-none light-gray-color padd-LR-15" href="">Funzioni</a></li>
+                        <li><a class="a-dc-none light-gray-color padd-LR-15 hovered" href="">Piani e prezzi<i class="fa-sharp fa-solid fa-caret-down padd-left-10"></i></a>
+                            <div class="drop-menu relative-nav">
+                                <ul>
+                                    <li><a class="a-dc-none light-gray-color" href="">Singolo</a></li>
+                                    <li><a class="a-dc-none light-gray-color" href="">Enterprise</a></li>
+                                    <li><a class="a-dc-none light-gray-color" href="">Team</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
-                <div class="height-text" id="nav-second">
-                    <a class="a-dc-none light-gray-color padd-LR-15" href="">Supporto</a>
-                    <a class="a-dc-none light-gray-color padd-LR-15" href="">Contatta l'ufficio vendite</a>
-                    <a class="a-dc-none light-gray-color padd-LR-15" href="">Accedi</a>
-                    <div class="inline-block bg-btn-blue-color btn-short line-height-30 btn-hover">
-                        <a class="a-dc-none light-gray-color padd-LR-15 btn-short white-color" href="">inizia</a>
-                    </div>
+                <div class="height-text">
+                    <ul class="d-flex">
+                        <li><a class="a-dc-none light-gray-color padd-LR-15" href="">Supporto</a></li>
+                        <li><a class="a-dc-none light-gray-color padd-LR-15" href="">Contatta l'ufficio vendite</a></li>
+                        <li><a class="a-dc-none light-gray-color padd-LR-15" href="">Accedi</a></li>
+                        <li>
+                            <div class="inline-block bg-btn-blue-color btn-short line-height-30 btn-hover">
+                                <a class="a-dc-none light-gray-color padd-LR-15 btn-short white-color" id="not-hover" href="">inizia</a>
+                            </div> 
+                        </li>
+                    </ul>
                 </div>
             </nav>
         </section>
     </header>
+
+
 
     <main>
         <!-- 90% section jumbo + image + h1 text -->
