@@ -102,14 +102,15 @@ nav ul li:hover .drop-menu ul{
 
 /* container settings (width bigger / lower) */
 .container-90{
-    width: 1400px;
+    max-width: 1400px;
     margin: 0 auto;
 }
 .container-80{
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
     
 }
+
 
 /* overflow - items */
 .overflow{
@@ -140,7 +141,7 @@ nav ul li:hover .drop-menu ul{
 }
 .stretch{
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     align-items: stretch;
 }
 .gap{
@@ -220,13 +221,13 @@ nav ul li:hover .drop-menu ul{
     width: 70%;
 }
 .three-row{
-    width: calc(100% / 3);
+    width: 360px;
 }
 .three-row-benefit{
-    width: calc((100% / 3) - 30px);
+    width: 300px;
 }
 .max-width-text{
-    width: 700px;
+    max-width: 700px;
 }
 
 
@@ -355,11 +356,11 @@ nav ul li:hover .drop-menu ul{
 
 /* button pharams */
 .btn-long{
-    width: 270px;
+    max-width: 270px;
     height: 50px;
 }
 .btn-short{
-    width: 70px;
+    max-width: 70px;
     height: 30px;
 }
 .line-height-70{
@@ -509,20 +510,20 @@ details[open] > summary {
 details > summary::after {
     font-family: FontAwesome;
     content: '\f107';
-    position: relative;
-    left: 30%;
+    position: absolute;
+    left: 72%;
 }
 
 details[open] > summary::after {
     font-family: FontAwesome;
     content: '\f077';
-    position: relative;
-    left: 30%;
+    position: absolute;
+    left: 72%;
 }
 
 
 .line-long{
-    width: 100%;
+    max-width: 100%;
     border: solid 1px var(--light-gray-border);
 }
 
