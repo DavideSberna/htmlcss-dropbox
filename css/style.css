@@ -189,7 +189,7 @@ nav ul li:hover .drop-menu ul{
     height: 50%; 
 }
 .img-logo{
-    width: 80%;   
+    max-width: 100px;   
 }
 .img-to-white{
     -webkit-filter: invert(100%);
@@ -481,6 +481,9 @@ nav ul li:hover .drop-menu ul{
 .padd-left-10{
     padding-left: 10px;
 }
+.margin-R-40{
+    margin-right: 40px;
+}
 
 
 
@@ -696,5 +699,158 @@ details[open] > summary::after {
     margin-right: 5px;
     margin-top: 3px;
 }
+
+
+
+.drop-toggler{
+    display: none;
+    background-color: #ffffff;
+    width: max-content;
+    height: max-content;
+    cursor: pointer;
+
+}
+.drop-toggler .span{
+    display: block;
+    background-color: rgb(0, 0, 0);
+    width: 50px;
+    height: 7px;
+    margin: 5px 0;
+    border-radius: 10px;
+}
+
+nav .items-drop{
+    display: none;
+}
+#drop--{
+    display: none;
+}
+
+
+
+
+
+@media screen and (max-width: 1500px) {
+    main section{
+        padding: 0 40px;
+    }
+    footer{
+        padding: 0 40px;
+    }
+   
+}
+
+@media screen and (max-width: 1200px) {
+    
+    .delete{
+        display: none;
+    }
+    
+    .drop-toggler{
+        display: grid;
+         
+    }
+
+    nav .items-drop{
+        background-color: white;
+        display: block;
+        width: 100%;
+        transform: translateY(-120%);
+        transition: 0.4s;
+        position: absolute;
+        left: 0;
+        top: 70px;
+        z-index: -1000;
+    }
+    
+    #drop--:checked ~ nav .items-drop{
+        transform: translateY(0);
+    } 
+    
+    main .right{
+       width: 60%; 
+    }
+    main .left{
+       width: 40%; 
+    }
+    main .three-row{
+        width: 500px;
+        margin: 50px 0;
+    }
+    .j-center{
+        justify-content: center;
+    }
+    
+
+}
+ 
+@media screen and (max-width: 1100px) {
+    .fs-h1{
+        font-size: 4rem;
+     }
+     
+    .j-center-media{
+        display: flex;
+        justify-content: center;
+        gap: 80px;
+
+    }
+    .three-row-benefit{
+        width: 400px;
+    }
+
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+     
+     .f-column{
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+    main .right{
+        width: 100%; 
+     }
+    main .left{
+        width: 100%; 
+     }
+
+     .j-center-media{
+        display: flex;
+        justify-content: center;
+        gap: 80px;
+
+    }
+     
+    
+}
+
+
+
+@media screen and (max-width: 480px) {
+     h1{
+        color: rgb(0, 255, 98);
+     }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
